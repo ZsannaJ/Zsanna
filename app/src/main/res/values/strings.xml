@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Bikini Bottoms Up</string>
+    <string name="name">Név</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="user_name">Felhasználónév</string>
+    <string name="email_address">E-mail cím</string>
+    <string name="password_again">Jelszó megerősítése</string>
+    <string name="cancel">Mégse</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="address">Cím</string>
+    <string name="account_type">Fiók típusa</string>
+    <string name="customer">Vásárló</string>
+    <string name="seller">Eladó</string>
+    <string name="product_description">Termék leírása.</string>
+
+    <string name="title_placeholder">Title</string>
+    <string name="item_placeholder">Leírás</string>
+    <string name="item_info_placeholder">Here is some news</string>
+    <string name="addToCart">Kosárba</string>
+
+    <string-array name="phone_labels">
+        <item>Otthon</item>
+        <item>Munkahely</item>
+        <item>Mobil</item>
+        <item>Egyéb</item>
+    </string-array>
+
+
+    <string-array name="shopping_item_names">
+        <item>Kék bikini</item>
+        <item>Kék úszódressz</item>
+        <item>Kék fürdőnadrág</item>
+        <item>Hajómintás fürdőnadrág</item>
+        <item>Virágmintás bikini</item>
+        <item>Virágmintás úszódressz</item>
+        <item>Virágmintás fürdőnadrág</item>
+        <item>Zöld bikini</item>
+        <item>Zöld fürdőnadrág</item>
+        <item>Piros bikini</item>
+        <item>Piros úszódressz</item>
+        <item>Piros fürdőnadrág</item>
+        <item>Sárga bikini</item>
+        <item>Sárga fürdőnadrág</item>
+    </string-array>
+
+    <string-array name="shopping_item_desc">
+        <item>Ez a termék használt textilekből, szőnyegekből vagy halászhálókból származó, független tanúsítvánnyal rendelkező újrahasznosított nylont tartalmaz, csökkentve a környezetre gyakorolt ​​hatását.</item>   <!-- Kék bikini -->
+        <item>Továbbra is mélyen keresünk az archívumban, hogy visszahozzuk legkedveltebb stílusainkat a 90-es évek végéről</item>   <!-- Kék úszódressz -->
+        <item>Ez a termék használt textilekből, gyártási hulladékokból vagy műanyag palackokból származó, független tanúsítvánnyal rendelkező újrahasznosított poliésztert tartalmaz, csökkentve ezzel a környezetre gyakorolt ​​hatását.</item>   <!-- Kék fürdőnadrág -->
+        <item>Ez a termék használt textilekből, gyártási hulladékokból vagy műanyag palackokból származó, független tanúsítvánnyal rendelkező újrahasznosított poliésztert tartalmaz, csökkentve ezzel a környezetre gyakorolt ​​hatását.</item>   <!-- Hajómintás fürdőnadrág -->
+        <item>Ez a virágos bikinifelső finom csavar a klasszikus karkötőn, állítható pántokkal, amelyek kötőfék stílusban formázhatók.</item>   <!-- Virágmintás bikini -->
+        <item>Tegyen nyilatkozatot a medence mellett ezzel a mintás fürdőruhával, amely elegáns háttámlával és keresztpánttal díszített.</item>   <!-- Virágmintás úszódressz -->
+        <item>Ez a termék használt textilekből, gyártási hulladékokból vagy műanyag palackokból származó, független tanúsítvánnyal rendelkező újrahasznosított poliésztert tartalmaz, csökkentve ezzel a környezetre gyakorolt ​​hatását.</item>   <!-- Virágmintás fürdőnadrág -->
+        <item>Ez a termék használt textilekből, szőnyegekből vagy halászhálókból származó, független tanúsítvánnyal rendelkező újrahasznosított nylont tartalmaz, csökkentve a környezetre gyakorolt ​​hatását.</item>   <!-- Zöld bikini -->
+        <item>Ez a termék használt textilekből, gyártási hulladékokból vagy műanyag palackokból származó, független tanúsítvánnyal rendelkező újrahasznosított poliésztert tartalmaz, csökkentve ezzel a környezetre gyakorolt ​​hatását.</item>   <!-- Zöld fürdőnadrág -->
+        <item>Ez a termék használt textilekből, szőnyegekből vagy halászhálókból származó, független tanúsítvánnyal rendelkező újrahasznosított nylont tartalmaz, csökkentve a környezetre gyakorolt ​​hatását.</item>   <!-- Piros bikini -->
+        <item>Ez a termék használt textilekből, szőnyegekből vagy halászhálókból származó, független tanúsítvánnyal rendelkező újrahasznosított nylont tartalmaz, csökkentve a környezetre gyakorolt ​​hatását.</item>   <!-- Piros úszódressz -->
+        <item>Ez a termék használt textilekből, gyártási hulladékokból vagy műanyag palackokból származó, független tanúsítvánnyal rendelkező újrahasznosított poliésztert tartalmaz, csökkentve ezzel a környezetre gyakorolt ​​hatását.</item>   <!-- Piros fürdőnadrág -->
+        <item>Ez a termék használt textilekből, szőnyegekből vagy halászhálókból származó, független tanúsítvánnyal rendelkező újrahasznosított nylont tartalmaz, csökkentve a környezetre gyakorolt ​​hatását.</item>   <!-- Sárga bikini -->
+        <item>Ez a termék használt textilekből, gyártási hulladékokból vagy műanyag palackokból származó, független tanúsítvánnyal rendelkező újrahasznosított poliésztert tartalmaz, csökkentve ezzel a környezetre gyakorolt ​​hatását.</item>   <!-- Sárga fürdőnadrág -->
+    </string-array>
+
+    <string-array name="shopping_item_rates">
+        <item>4.5</item>   <!-- Kék bikini -->
+        <item>3.5</item>   <!-- Kék úszódressz -->
+        <item>4.5</item>   <!-- Kék fürdőnadrág -->
+        <item>3.5</item>   <!-- Hajómintás fürdőnadrág -->
+        <item>5</item>   <!-- Virágmintás bikini -->
+        <item>5</item>   <!-- Virágmintás úszódressz -->
+        <item>5</item>   <!-- Virágmintás fürdőnadrág -->
+        <item>5</item>   <!-- Zöld bikini -->
+        <item>5</item>   <!-- Zöld fürdőnadrág -->
+        <item>4</item>   <!-- Piros bikini -->
+        <item>4.5</item>   <!-- Piros úszódressz -->
+        <item>3.5</item>   <!-- Piros fürdőnadrág -->
+        <item>4.5</item>   <!-- Sárga bikini -->
+        <item>4</item>   <!-- Sárga fürdőnadrág -->
+    </string-array>
+
+    <string-array name="shopping_item_images">
+        <item>@drawable/blue_bikini</item>   <!-- Kék bikini -->
+        <item>@drawable/blue_onepiece</item>   <!-- Kék úszódressz -->
+        <item>@drawable/blue_short</item>   <!-- Kék fürdőnadrág -->
+        <item>@drawable/boatpattern_short</item>   <!-- Hajómintás fürdőnadrág -->
+        <item>@drawable/flowerpattern_bikini</item>   <!-- Virágmintás bikini -->
+        <item>@drawable/flowerpattern_onepiece</item>   <!-- Virágmintás úszódressz -->
+        <item>@drawable/flowerpattern_short</item>   <!-- Virágmintás fürdőnadrág -->
+        <item>@drawable/green_bikini</item>   <!-- Zöld bikini -->
+        <item>@drawable/green_short</item>   <!-- Zöld fürdőnadrág -->
+        <item>@drawable/red_bikini</item>   <!-- Piros bikini -->
+        <item>@drawable/red_onepiece</item>   <!-- Piros úszódressz -->
+        <item>@drawable/red_short</item>   <!-- Piros fürdőnadrág -->
+        <item>@drawable/yellow_bikini</item>   <!-- Sárga bikini -->
+        <item>@drawable/yellow_short</item>   <!-- Sárga fürdőnadrág -->
+    </string-array>
+
+    <string-array name="shopping_item_price">
+        <item>4 990 Ft</item>   <!-- Kék bikini -->
+        <item>10 000 Ft</item>   <!-- Kék úszódressz -->
+        <item>3 990 Ft</item>   <!-- Kék fürdőnadrág -->
+        <item>5 990 Ft</item>   <!-- Hajómintás fürdőnadrág -->
+        <item>9 990 Ft</item>   <!-- Virágmintás bikini -->
+        <item>10 990 Ft</item>   <!-- Virágmintás úszódressz -->
+        <item>5 990 Ft</item>   <!-- Virágmintás fürdőnadrág -->
+        <item>4 990 Ft</item>   <!-- Zöld bikini -->
+        <item>3 990 Ft</item>   <!-- Zöld fürdőnadrág -->
+        <item>4 990 Ft</item>   <!-- Piros bikini -->
+        <item>9 990 Ft</item>   <!-- Piros úszódressz -->
+        <item>3 990 Ft</item>   <!-- Piros fürdőnadrág -->
+        <item>4 990 Ft</item>   <!-- Sárga bikini -->
+        <item>3 990 Ft</item>   <!-- Sárga fürdőnadrág -->
+    </string-array>
+
+</resources>

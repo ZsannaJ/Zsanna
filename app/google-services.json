@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "569829693196",
+    "project_id": "bikinibottomsup-720fd",
+    "storage_bucket": "bikinibottomsup-720fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569829693196:android:bf07751b41e67358639b29",
+        "android_client_info": {
+          "package_name": "com.example.zsanna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569829693196-q9mktqigt4h09o29nd1c0ls74vu4s5v7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "73dceebaee41ce2e797bfff3dbca913c3e1f9a2d"
+          }
+        },
+        {
+          "client_id": "569829693196-8dgphsfp0c7ficrsq496758rnsl0ranu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhLibPSnTx0VylLrkebWM5VCpgKtC8mQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569829693196-8dgphsfp0c7ficrsq496758rnsl0ranu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
