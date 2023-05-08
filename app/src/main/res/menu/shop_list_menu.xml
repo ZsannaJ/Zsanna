@@ -38,4 +38,11 @@
         android:title="Beállítás"
         android:orderInCategory="1">
     </item>
+
+    <item
+        android:id="@+id/profil"
+        app:showAsAction="never"
+        android:title="Profil"
+        android:orderInCategory="0">
+    </item>
 </menu>

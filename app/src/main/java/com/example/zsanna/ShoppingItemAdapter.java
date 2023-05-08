@@ -14,21 +14,23 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.firestore.QuerySnapshot;
 
-import java.lang.annotation.Annotation;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.EventListener;
 
-public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapter.ViewHolder> implements Filterable {
+public class ShoppingItemAdapter
+        extends RecyclerView.Adapter<ShoppingItemAdapter.ViewHolder>
+        implements Filterable {
     // Member variables.
-    private ArrayList<ShoppingItem> mShopingItemData = new ArrayList<>();
-    private ArrayList<ShoppingItem> mShopingItemDataAll = new ArrayList<>();
+    private ArrayList<ShoppingItem> mShoppingData;
+    private ArrayList<ShoppingItem> mSoppingDataAll;
     private Context mContext;
     private int lastPosition = -1;
 
     ShoppingItemAdapter(Context context, ArrayList<ShoppingItem> itemsData) {
-        this.mShopingItemData = itemsData;
-        this.mShopingItemDataAll = itemsData;
+        this.mShoppingData = itemsData;
+        this.mSoppingDataAll = itemsData;
         this.mContext = context;
     }
 
@@ -41,8 +43,13 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
 
     @Override
     public void onBindViewHolder(ShoppingItemAdapter.ViewHolder holder, int position) {
-        ShoppingItem currentItem = mShopingItemData.get(position);
+        // Get current sport.
+        ShoppingItem currentItem = mShoppingData.get(position);
+
+        // Populate the textviews with data.
         holder.bindTo(currentItem);
+
+
         if(holder.getAdapterPosition() > lastPosition) {
             Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.slide_in_row);
             holder.itemView.startAnimation(animation);
@@ -52,7 +59,7 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
 
     @Override
     public int getItemCount() {
-        return mShopingItemData.size();
+        return mShoppingData.size();
     }
 
 
@@ -61,21 +68,21 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
      * **/
     @Override
     public Filter getFilter() {
-        return shopingFilter;
+        return shoppingFilter;
     }
 
-    private Filter shopingFilter = new Filter() {
+    private Filter shoppingFilter = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence charSequence) {
             ArrayList<ShoppingItem> filteredList = new ArrayList<>();
             FilterResults results = new FilterResults();
 
             if(charSequence == null || charSequence.length() == 0) {
-                results.count = mShopingItemDataAll.size();
-                results.values = mShopingItemDataAll;
+                results.count = mSoppingDataAll.size();
+                results.values = mSoppingDataAll;
             } else {
                 String filterPattern = charSequence.toString().toLowerCase().trim();
-                for(ShoppingItem item : mShopingItemDataAll) {
+                for(ShoppingItem item : mSoppingDataAll) {
                     if(item.getName().toLowerCase().contains(filterPattern)){
                         filteredList.add(item);
                     }
@@ -90,13 +97,12 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
 
         @Override
         protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-            mShopingItemData = (ArrayList)filterResults.values;
+            mShoppingData = (ArrayList)filterResults.values;
             notifyDataSetChanged();
         }
     };
 
     class ViewHolder extends RecyclerView.ViewHolder {
-
         // Member Variables for the TextViews
         private TextView mTitleText;
         private TextView mInfoText;
@@ -113,13 +119,6 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
             mItemImage = itemView.findViewById(R.id.itemImage);
             mRatingBar = itemView.findViewById(R.id.ratingBar);
             mPriceText = itemView.findViewById(R.id.price);
-
-            itemView.findViewById(R.id.add_to_cart).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    ((ShopListActivity)mContext).updateAlertIcon();
-                }
-            });
         }
 
         void bindTo(ShoppingItem currentItem){
@@ -130,6 +129,9 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
 
             // Load the images into the ImageView using the Glide library.
             Glide.with(mContext).load(currentItem.getImageResource()).into(mItemImage);
+
+            itemView.findViewById(R.id.add_to_cart).setOnClickListener(view -> ((ShopListActivity)mContext).updateAlertIcon(currentItem));
+            itemView.findViewById(R.id.delete).setOnClickListener(view -> ((ShopListActivity)mContext).deleteItem(currentItem));
         }
     }
 }
